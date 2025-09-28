@@ -1,0 +1,18 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "/api/$1"
+    },
+    {
+      "source": "/([a-zA-Z0-9]{1,8})",
+      "destination": "/api/$1"
+    },
+    {
+      "source": "/((?!api|_next|static).*)",
+      "destination": "/client/build/index.html"
+    }
+  ],
+  "buildCommand": "cd client && npm run build",
+  "outputDirectory": "client/build"
+}

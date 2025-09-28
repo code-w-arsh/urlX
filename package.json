@@ -1,0 +1,30 @@
+{
+  "name": "url-shortener",
+  "version": "1.0.0",
+  "description": "Transform your long URLs into clean, shareable links. Built with love by Arsh - because every click matters.",
+  "main": "api/index.js",
+  "scripts": {
+    "dev": "vercel dev",
+    "server": "node server.js",
+    "client": "cd client && npm start",
+    "build": "cd client && npm run build",
+    "start": "vercel dev"
+  },
+  "keywords": ["url-shortener", "mern", "react", "vercel", "serverless"],
+  "author": {
+    "name": "Arsh",
+    "email": "arshch52@gmail.com",
+    "url": "https://arshfs.tech"
+  },
+  "dependencies": {
+    "mongoose": "^8.0.3",
+    "concurrently": "^8.2.2",
+    "mongodb": "^6.3.0"
+  },
+  "devDependencies": {
+    "nanoid": "^5.0.4",
+    "validator": "^13.11.0",
+    "express": "^4.18.2",
+    "cors": "^2.8.5"
+  }
+}
