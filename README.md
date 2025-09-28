@@ -63,7 +63,7 @@ cd client && npm install && cd ..
 
 **Run Locally**
 ```bash
-npm start
+cd client && npm start
 # app runs on http://localhost:3000
 ```
 
